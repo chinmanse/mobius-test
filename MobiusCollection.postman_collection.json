@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "81033f6c-b8bf-48c8-a608-33bfb2be2ff7",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3020209"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "connect.sid=s%3Aq8OhtUwL3UGmc0yNrXra9fr_aNIWVkbm.209kUTZHN%2Bl%2B%2FPu%2Fl3fFMMnGdBXgcPV60%2F9sgpQ53OI; XSRF-TOKEN=eyJpdiI6ImVNMlFRRzBXc2crNzVQQ0lnbjIrZ3c9PSIsInZhbHVlIjoiNmY5WHNQRzNDbk1iUERTek9XTUx3aEgvT2J6cWhaWXZLMTlIVk03bDFZNUlhcU5oOXRCS1RkR1pCTmhwdWpzL3RNRWpTV2VNY2NjU0tmeUt3R2FOZzNjOHVsMzR5aHJKd0FQeDJycFQzK0JFeFYwQWsxTjkzend2RHlFOWU5VEgiLCJtYWMiOiIxN2I3YmJjOTBmZDA1ODAzOWQ0NmM3ODM2Njk1OGE4NTE1ZTE2Yzk2Mjc5MDdiOTMwNzFhYTZhMzNmNTFiYmVkIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkhmNFZyV2JGVlRNdlFNdkJVelNuOHc9PSIsInZhbHVlIjoiaEVDZDFWWTNtd2Z2K1lzOEs0aG1iWUsydi94T0RNMDZMK1R0ejZmM1BPNmZlUFBhd3FqampscVFTS09LTHN1N0ZhbFM4bHp2K3VEbXNuRktzRzAybzNMcDJnYmZYcXNVZHBqUUdEdHpyazVxaWRVMnVsaUovQ1RLMndCY1k4VW8iLCJtYWMiOiI2ZmQzMjc1MGI4M2FhYzQzNzlmOWE1YmY4MjMyNjIzMjg3MjIyNWFkOGM1OWY1MDgxM2YxZTFhMzI0OTY2OGJlIiwidGFnIjoiIn0%3D",
+						"name": "cookie",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"name": "content-type",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\" : \"Rodrigo\",\n    \"last_name\" : \"Cardenas\",\n    \"email\" : \"rodrigo@gmail.com\",\n    \"password\" : \"123456\",\n    \"address\" : \"direccion falsa\",\n    \"phone\" : \"1234567\",\n    \"phone_2\" : \"1234567\",\n    \"postal_code\" : \"111\",\n    \"birth_date\" : \"1988-01-01\",\n    \"gender\" : \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "connect.sid=s%3Aq8OhtUwL3UGmc0yNrXra9fr_aNIWVkbm.209kUTZHN%2Bl%2B%2FPu%2Fl3fFMMnGdBXgcPV60%2F9sgpQ53OI; XSRF-TOKEN=eyJpdiI6ImVNMlFRRzBXc2crNzVQQ0lnbjIrZ3c9PSIsInZhbHVlIjoiNmY5WHNQRzNDbk1iUERTek9XTUx3aEgvT2J6cWhaWXZLMTlIVk03bDFZNUlhcU5oOXRCS1RkR1pCTmhwdWpzL3RNRWpTV2VNY2NjU0tmeUt3R2FOZzNjOHVsMzR5aHJKd0FQeDJycFQzK0JFeFYwQWsxTjkzend2RHlFOWU5VEgiLCJtYWMiOiIxN2I3YmJjOTBmZDA1ODAzOWQ0NmM3ODM2Njk1OGE4NTE1ZTE2Yzk2Mjc5MDdiOTMwNzFhYTZhMzNmNTFiYmVkIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkhmNFZyV2JGVlRNdlFNdkJVelNuOHc9PSIsInZhbHVlIjoiaEVDZDFWWTNtd2Z2K1lzOEs0aG1iWUsydi94T0RNMDZMK1R0ejZmM1BPNmZlUFBhd3FqampscVFTS09LTHN1N0ZhbFM4bHp2K3VEbXNuRktzRzAybzNMcDJnYmZYcXNVZHBqUUdEdHpyazVxaWRVMnVsaUovQ1RLMndCY1k4VW8iLCJtYWMiOiI2ZmQzMjc1MGI4M2FhYzQzNzlmOWE1YmY4MjMyNjIzMjg3MjIyNWFkOGM1OWY1MDgxM2YxZTFhMzI0OTY2OGJlIiwidGFnIjoiIn0%3D",
+						"name": "cookie",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"name": "content-type",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\" : \"Rodrigo\",\n    \"last_name\" : \"Cardenas\",\n    \"email\" : \"rodrigo@gmail.com\",\n    \"password\" : \"123456\",\n    \"address\" : \"direccion falsa\",\n    \"phone\" : \"1234567\",\n    \"phone_2\" : \"1234567\",\n    \"postal_code\" : \"111\",\n    \"birth_date\" : \"1988-01-01\",\n    \"gender\" : \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/7d6e3878-a121-11ef-90c7-0242ac1a000b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"7d6e3878-a121-11ef-90c7-0242ac1a000b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "connect.sid=s%3Aq8OhtUwL3UGmc0yNrXra9fr_aNIWVkbm.209kUTZHN%2Bl%2B%2FPu%2Fl3fFMMnGdBXgcPV60%2F9sgpQ53OI; XSRF-TOKEN=eyJpdiI6ImVNMlFRRzBXc2crNzVQQ0lnbjIrZ3c9PSIsInZhbHVlIjoiNmY5WHNQRzNDbk1iUERTek9XTUx3aEgvT2J6cWhaWXZLMTlIVk03bDFZNUlhcU5oOXRCS1RkR1pCTmhwdWpzL3RNRWpTV2VNY2NjU0tmeUt3R2FOZzNjOHVsMzR5aHJKd0FQeDJycFQzK0JFeFYwQWsxTjkzend2RHlFOWU5VEgiLCJtYWMiOiIxN2I3YmJjOTBmZDA1ODAzOWQ0NmM3ODM2Njk1OGE4NTE1ZTE2Yzk2Mjc5MDdiOTMwNzFhYTZhMzNmNTFiYmVkIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkhmNFZyV2JGVlRNdlFNdkJVelNuOHc9PSIsInZhbHVlIjoiaEVDZDFWWTNtd2Z2K1lzOEs0aG1iWUsydi94T0RNMDZMK1R0ejZmM1BPNmZlUFBhd3FqampscVFTS09LTHN1N0ZhbFM4bHp2K3VEbXNuRktzRzAybzNMcDJnYmZYcXNVZHBqUUdEdHpyazVxaWRVMnVsaUovQ1RLMndCY1k4VW8iLCJtYWMiOiI2ZmQzMjc1MGI4M2FhYzQzNzlmOWE1YmY4MjMyNjIzMjg3MjIyNWFkOGM1OWY1MDgxM2YxZTFhMzI0OTY2OGJlIiwidGFnIjoiIn0%3D",
+						"name": "cookie",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"name": "content-type",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\" : \"Rodrigo\",\n    \"last_name\" : \"Cardenas\",\n    \"email\" : \"rodrigo@gmail.com\",\n    \"password\" : \"123456\",\n    \"address\" : \"direccion falsa\",\n    \"phone\" : \"1234567\",\n    \"phone_2\" : \"1234567\",\n    \"postal_code\" : \"111\",\n    \"birth_date\" : \"1988-01-01\",\n    \"gender\" : \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/b395c7a1-b5b0-4622-b2bc-cbfcddeb1fd1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"b395c7a1-b5b0-4622-b2bc-cbfcddeb1fd1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
