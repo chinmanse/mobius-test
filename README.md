@@ -37,3 +37,8 @@ Para iniciar el proyecto puede ejecutar el siguiente comando:
 ```
 composer run dev
 ```
+### Swagger
+El proyecto cuenta con swagger integrado, para poder acceder puede ingresar a la siguiente dirección:
+```
+http://localhost:8000/api/documentation
+```
